@@ -1,34 +1,29 @@
 body {
     margin: 0;
     color: #fff;
-    font-weight: 800;
+    font-weight: 800px;
     font-size: 24px;
     text-align: center;
 }
 
 .box {
     box-sizing: border-box;
-    position: absolute;
     padding: 1em;
 }
 
 .container{
-    position: relative;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
+    flex-basis: 16.66%;
     background-color: #253b4a;
-    height: 16.66%;
-    width: 100%;
-    top: 0;
 }
 .sidebar{
+    flex-basis: 66.66%;
     background-color: #ffbc00;
-    height: 66.66%;
-    width: 25%;
-    top: 16.66%;
-    left: 0;
 }
 .ads{
     background-color: #257d92;
@@ -40,8 +35,6 @@ body {
     background-color: #ffbc00;
 }
 .footer{
+    flex-basis: 16.66%;
     background-color: #257d92;
-    height: 16.66%;
-    width: 100%;
-    bottom: 0;
 }
